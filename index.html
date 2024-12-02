@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <title>Browse Categories | Twitch API Example</title>
-    <link rel="stylesheet" href="/twitch_misc/style.css" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
-   <a href="https://id.twitch.tv/oauth2/authorize?client_id=hozgh446gdilj5knsrsxxz8tahr3koz&amp;redirect_uri=https%3A%2F%2Fbarrycarlyon.github.io%2Ftwitch_misc%2F&amp;response_type=token" id="authorize" target="barrysgithubtwitchauth">Authorize</a>
-    <div id="loading"></div>
+    <a href="https://id.twitch.tv/oauth2/authorize?https://id.twitch.tv/oauth2/authorize?&response_type=token&client_id=x8vcaazbs7fd1weojalvlstbbjo04h&redirect_uri=http://localhost:8081&scope=channel%3Amanage%3Apolls+channel%3Aread%3Apolls&state=c3ab8aa609ea11e793ae92361f002671">Connect with Twitch</a>
 
     <h3>Page Loading Status</h3>
 
@@ -29,12 +27,12 @@
 
     <script type="text/javascript">
         // go populate this with a client_id
-        var client_id = 'hozgh446gdilj5knsrsxxz8tahr3koz';
-        var redirect = 'https://barrycarlyon.github.io/twitch_misc/';
+        var client_id = 'x8vcaazbs7fd1weojalvlstbbjo04h';
+        var redirect = 'http://localhost:8081';
         // setup a memory space for the token
-        var access_token = '';
+        var access_token = '9yvqzkg6wo5yi3tbptbz37b28dwdz8';
 
-        document.getElementById('authorize').setAttribute('href', 'https://id.twitch.tv/oauth2/authorize?client_id=' + client_id + '&redirect_uri=' + encodeURIComponent(redirect) + '&response_type=token')
+        document.getElementById('authorize').setAttribute('href', 'https://id.twitch.tv/oauth2/authorize?client_id=' + client_id + '&redirect_uri=' + encodeURIComponent(redirect) + '/&response_type=token')
 
         function processToken(token) {
             access_token = token;
